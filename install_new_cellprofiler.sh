@@ -118,49 +118,30 @@ cat <<EOT >> environment.yml
 name: cellprofiler
 # in order of priority: highest (top) to lowest (bottom)
 channels:
-    - conda-forge
-    - anaconda
-    - goodman # mysql-python for mac
-    - bjornfjohansson
-    - bioconda
-    - cyclus # java-jdk for windows
-    - daf # wxpython for linux
+- conda-forge
+- anaconda
+- bioconda
+- defaults
+
 dependencies:
-    - appdirs
-    - cython=0.28.5
-    - h5py=2.8.0
-    - ipywidgets
-    - java-jdk
-    - jupyter=1.0.0
-    - libtiff
-    - libxml2
-    - libxslt
-    - lxml=4.2.5
-    - packaging=17.1
-    - pillow=5.2.0
-    - pip
-    - python=2
-    - pyzmq=15.3.0
-    - mahotas=1.4.4
-    - matplotlib=2.2.3
-    - mysql-python
-    - numpy=1.14.5
-    - raven=6.3.0
-    - requests=2.18.4
-    - scikit-image=0.14.0
-    - scikit-learn=0.19.1
-    - scipy=1.1.0
-    - sphinx
-    - tifffile=0.15.1
-    - wxpython=3.0.2.0
-    - pip:
-        - cellh5==1.3.0
-        - centrosome==1.0.9
-        - inflect==1.0.0
-        - prokaryote==2.4.0
-        - javabridge==1.0.15
-        - python-bioformats==1.4.0
-        - git+https://github.com/CarragherLab/CellProfiler.git@master
+- python=3.8
+- pip
+- numpy
+- matplotlib
+- pandas
+- mysqlclient
+- openjdk
+- scikit-learn
+- mahotas
+- gtk2
+- Jinja2=3.0.1
+- inflect=5.3.0
+- wxpython=4.1.0
+- mysqlclient=1.4.4
+- sentry-sdk=0.18.0
+
+- pip:
+    - cellprofiler==4.2.1
 EOT
 
 
